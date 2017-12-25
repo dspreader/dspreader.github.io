@@ -64,18 +64,8 @@ sample result :
 ~~~
 3.reset pos
 ~~~ javascript
-function : 
-          [pos asynResetPosStatusBlock:^(BOOL isSuccess, NSString *stateStr) {
-                if (isSuccess) {
-                self.textViewLog.text = stateStr;
-                }
-           }];
-callback function :
-          -(void)onAsyncResetPosStatus:(BOOL)isReset;
+function : [pos resetPosStatus];
+
 sample result :
-         if (isReset) {
-          self.textViewLog.text = @"reset qpos success";
-         }else{
-          self.textViewLog.text = @"reset pos fail";
-          }
+       result = reset qpos success;
 ~~~
