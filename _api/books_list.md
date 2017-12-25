@@ -30,41 +30,52 @@ right_code: |
   ~~~
   {: title="Error" }
 ---
-offset
-: Offset the results by this amount
-
-limit
-: Limit the number of books returned
-
-This call will return a maximum of 100 books
-{: .info }
-
-Lists all the photos you have access to. You can paginate by using the parameters listed above.
+title : 
+1.get qpos id
 
 ~~~ javascript
-$.get("http://api.myapp.com/books/", { "token": "YOUR_APP_KEY"}, function(data) {
-  alert(data);
-});
+function : [pos getQPosId];
+callback function :
+-(void) onQposIdResult: (NSDictionary*)posId;
+sample result :
+               "27003009117051600470
+                psamId:3730303030343730
+                merchantId:
+                vendorCode:
+                deviceNumber:
+                psamNo:  "
 ~~~
-{: title="jQuery" }
-
-~~~ python
-r = requests.get("http://api.myapp.com/books/", token="YOUR_APP_KEY")
-print r.text
-~~~
-{: title="Python" }
-
+2.get qpos info
 ~~~ javascript
-var request = require("request");
-request("http://api.myapp.com/books?token=YOUR_APP_KEY", function (error, response, body) {
-  if (!error && response.statusCode == 200) {
-    console.log(body);
-  }
-});
+function :[pos getQposInfo];
+callback function :
+-(void) onQposInfoResult: (NSDictionary*)posInfoData;
+sample result :
+              "Bootloader Version: 3.1
+               Firmware Version: 3.58.3.46
+               Hardware Version: A27
+               Battery Percentage: 0%
+               Charge: false
+               USB: false
+               Track 1 Supported: true
+               Track 2 Supported: true
+               Track 3 Supported: false
+               updateWorkKeyFlag: false"
 ~~~
-{: title="Node.js" }
-
-~~~ bash
-curl http://sampleapi.readme.com/orders?key=YOUR_APP_KEY
+3.reset pos
+~~~ javascript
+function : 
+          [pos asynResetPosStatusBlock:^(BOOL isSuccess, NSString *stateStr) {
+                if (isSuccess) {
+                self.textViewLog.text = stateStr;
+                }
+           }];
+callback function :
+          -(void)onAsyncResetPosStatus:(BOOL)isReset;
+sample result :
+         if (isReset) {
+          self.textViewLog.text = @"reset qpos success";
+         }else{
+          self.textViewLog.text = @"reset pos fail";
+          }
 ~~~
-{: title="Curl" }

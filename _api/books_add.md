@@ -22,24 +22,30 @@ right_code: |
   ~~~
   {: title="Error" }
 ---
-title
-: The title for the book
-
-score
-: The book's score between 0 and 5
-
-The book will automatically be added to your reading list
-{: .success }
-
-Adds a book to your collection.
+title : 
+1.doTrade
 
 ~~~ javascript
-$.post("http://api.myapp.com/books/", {
-  "token": "YOUR_APP_KEY",
-  "title": "The Book Thief",
-  "score": 4.3
-}, function(data) {
-  alert(data);
-});
+function : [pos doTrade:30];[pos doCheckCard]
+callback function :
+-(void) onDoTradeResult: (DoTradeResult)result DecodeData:(NSDictionary*)decodeData;
+sample result :
+        if(result==DoTradeResult_MCR){
+         result = "Card Swiped:
+                   Format ID: 30
+                   Masked PAN: 623568XXXXXXXXX9908
+                   Expiry Date: 2601
+                   Cardholder Name: 
+                   PIN KSN: 00000332100300E0000E
+                   Track KSN: 00000332100300E00002
+                   Service Code: 220
+                   Encrypted Track 1: 
+                   Encrypted Track 2: 817D3936CBC58D42D53829142F63AEEC8DB77ABBA17FC32D
+                   Encrypted Track 3: 
+                   pinBlock: CEFBDCEAC0B025EB
+                   encPAN:   "
+        }
+tips: the difference between api doTrade and doCheckCard:
+      calling doCheck card , you don't have to input pin when doing swipe transaction.
 ~~~
-{: title="jQuery" }
+
