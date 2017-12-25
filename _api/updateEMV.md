@@ -1,7 +1,7 @@
 ---
-title: /books/:id
+title: UpdateEMV
 position: 1.5
-type: delete
+type: void
 description: Deletes a book
 right_code: |
   ~~~ json

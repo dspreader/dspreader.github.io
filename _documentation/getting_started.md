@@ -2,9 +2,6 @@
 title: Getting Started
 position: 1
 ---
-
-Welcome to dspreader.github.io
-
 *QPOS Programming Guide*
 
 
