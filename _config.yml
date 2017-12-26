@@ -12,10 +12,10 @@ collections:
     title: Documentation
     position: 1
   normalapi:
-    title:Normal APIs
+    title:NormalAPIs
     position: 2
   transactionsapi:
-    title: Transactions APIs
+    title: TransactionsAPIs
     position: 3
 gems:
   - jekyll-sitemap
