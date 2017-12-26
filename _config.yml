@@ -11,11 +11,11 @@ collections:
   documentation:
     title: Documentation
     position: 1
-  api:
-    title: APIs
+  normalapi:
+    title:Normal APIs
     position: 2
-  transactions:
-    title: Transactions
+  transactionsapi:
+    title: Transactions APIs
     position: 3
 gems:
   - jekyll-sitemap
