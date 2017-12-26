@@ -12,7 +12,7 @@ collections:
     title: Documentation
     position: 1
   normalapi:
-    title:NormalAPIs
+    title: NormalAPIs
     position: 2
   transactionsapi:
     title: TransactionsAPIs
