@@ -6,7 +6,6 @@ description: Result of contactless EMV transaction
 right_code: |
   ~~~ json
   {
-      "transaction result":{ 
       "Tap Card":
       "Format ID": 30
       "Masked PAN": "623568XXXXXXXXX9908"
@@ -20,7 +19,6 @@ right_code: |
       "Encrypted Track 3": 
       "pinBlock": "F3E581E6A904ECE2"
       "encPAN":";
-       }
   }
   ~~~
   {: title="Response" }

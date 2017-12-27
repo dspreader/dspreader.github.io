@@ -3,14 +3,12 @@ title: Digital Envelope
 position: 2
 right_code: |
   ~~~ javascript
-  $.get("http://api.myapp.com/books/", { "token": "YOUR_APP_KEY"}, function(data) {
-    alert(data);
-  });
+  https://gitlab.com/dspread
   ~~~
   {: title="jQuery" }
 
   ~~~ bash
-  curl http://api.myapp.com/books?token=YOUR_APP_KEY
+ 
   ~~~
   {: title="Curl" }
 ---
@@ -26,8 +24,6 @@ You can store your BDKs in an industrial used HSM (Hardware Secure Module). Then
 2.After above step, QPOS is capable of protecting card and transaction data by encrypting them. Then send the encrypted card to acquirer. 
 
 3.Finally, acquirer will receive and decrypt card and transaction data, then send card data to issuer bank for confirm.
-
-4.Bellow will illustrate expected key files and format for production by factory 
 
 ~~~
 
