@@ -1,5 +1,5 @@
 ---
-title: getQposInfo
+title: GetQposInfo
 position: 1.1
 type: void
 description: Get device info.

@@ -1,5 +1,5 @@
 ---
-title: magnetic strip  transaction
+title: MagneticStripCardTransaction
 position: 1.3
 type: get
 description: Result of magnetic strip card transaction

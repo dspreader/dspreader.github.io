@@ -1,5 +1,5 @@
 ---
-title: ICC (EMV) card transaction
+title: ICC(EMV)CardTransaction
 position: 1.3
 type: void
 description: Result of EMV transaction
