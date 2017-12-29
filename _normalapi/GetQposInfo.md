@@ -27,7 +27,7 @@ function :
 ```objc
 -(void) getQPosInfo;
 ```
-sample function:
+sample code:
 ```objc
 [pos getQposInfo];
 ```
