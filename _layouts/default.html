@@ -23,7 +23,7 @@
 	<body>
 		<header>
 			<h1>
-				<a href="/"><img src="/images/logo.svg" height="40" alt="{{ site.title }} logo"></a>
+				<a href="https://gitlab.com/dspread"><img src="/images/logo.svg" height="40" alt="{{ site.title }} logo"></a>
 				<button type="button" class="open-nav" id="open-nav"></button>
 			</h1>
 
@@ -45,7 +45,7 @@
 		</div>
 		<script>
 			document.getElementById("open-nav").addEventListener("click", function () {
-				window.location.href="https://gitlab.com/dspread";
+				document.body.classList.toggle("nav-open");
 			});
 		</script>
 	</body>
