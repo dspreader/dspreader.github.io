@@ -13,7 +13,9 @@ right_code: |
   {: title="Response" }
 
 ---
+~~~javascript
 Digital Envelope
+~~~
 function:
 ```objc
 -(void)udpateWorkKey:(NSString *)updateKey;
@@ -26,7 +28,9 @@ callback function:
 ```objc
 -(void) onRequestUpdateWorkKeyResult:(UpdateInformationResult)updateInformationResult;
 ```
+~~~javascript
 Update Workkey
+~~~
 function:
 ```objc
 -(void)doUpdateIPEKOperation:(NSString *)groupKey

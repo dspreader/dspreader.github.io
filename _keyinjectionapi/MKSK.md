@@ -17,9 +17,9 @@ right_code: |
   ~~~ json
   
 ---
-
+~~~javascript
 Set Master Key
-
+~~~
 function:
 ```objc
 -(void) setMasterKey:(NSString *)key  checkValue:(NSString *)chkValue keyIndex:(NSInteger) mKeyIndex;
@@ -33,10 +33,11 @@ NSString *pikCheck = @"82E13665B4624DF5";
 ```
 callback function :
 ```objc
--(void) onReturnSetMasterKeyResult: (BOOL)isSuccess;
+-(void) onReturnSetMasterKeyResult:(BOOL)isSuccess;
 ```
+~~~javascript
 Update WorkKey
-
+~~~
 function
 ```objc
 NSString * pik = @"89EEF94D28AA2DC189EEF94D28AA2DC1";
