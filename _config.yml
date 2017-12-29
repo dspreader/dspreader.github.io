@@ -34,6 +34,7 @@ defaults:
       path: ""
     values:
       layout: default
+      coments: true
 
 types:
   - get
