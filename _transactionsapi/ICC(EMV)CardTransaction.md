@@ -18,7 +18,12 @@ right_code: |
   ~~~
 ---
 
-function : 
+function :
+```objc
+-(void) doTrade:(NSInteger) timeout;
+-(void) doCheckCard:(NSInteger) timeout;
+```
+sample code:
 ```objc
 [pos doTrade:30];[pos doCheckCard];
 ```
