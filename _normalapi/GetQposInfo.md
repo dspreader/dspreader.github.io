@@ -25,9 +25,10 @@ right_code: |
   {: title="Error" }
 ---
 
-get qpos info
+###  get qpos info
 
-~~~ javascript
+Get Device Info.
+
 function :[pos getQposInfo];
 ~~~
 ~~~ javascript
