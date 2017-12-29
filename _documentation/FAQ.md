@@ -6,6 +6,8 @@ position: 3
 
 ### FAQ 
 
+There are some frequently questions in integration.
+
 
 ```
 Q:In which function we prompt the user to swipe or insert card ?
