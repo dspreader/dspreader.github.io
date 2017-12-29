@@ -2,7 +2,7 @@
 title: getQposInfo
 position: 1.1
 type: void
-description: Get Device Info.
+description: 
 right_code: |
   ~~~ json
   {
@@ -28,13 +28,13 @@ right_code: |
 ###  get qpos info
 
 Get Device Info.
-
+```oc
 function :[pos getQposInfo];
-~~~
-~~~ javascript
+```
+```oc
 callback function :
 -(void) onQposInfoResult: (NSDictionary*)posInfoData;
-~~~
+```
 
 
 

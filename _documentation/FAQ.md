@@ -4,11 +4,6 @@ position: 3
 ---
 
 
-
-
-<!--There are some frequently answers and questions in integration.-->
-
-
 ```
 Q:In which function we prompt the user to swipe or insert card ?
 A:onRequestWaitingUser()
