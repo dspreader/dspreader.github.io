@@ -11,45 +11,11 @@ right_code: |
   ~~~
   {: title="Response" }
 
-  ~~~ json
-  ~~~
-  {: title="Error" }
 ---
-~~~ javascript
-function:
--(void)updateEmvAPP:(NSInteger )operationType data:(NSArray*)data  block:(void (^)(BOOL isSuccess, NSString *stateStr))updateEMVAPPBlock;
-~~~~
-~~~ javascript 
-sample code: 
-~~~
-~~~ javascript 
--(void)updateEMV{
-      NSMutableDictionary * emvCapkDict = [pos getEMVAPPDict];
-      NSString * c =[[emvCapkDict valueForKey:@"Terminal_Capabilities"] stringByAppendingString:[self getEMVStr:@"60B8C8"]];
-      NSArray * aidArr = @[c];
-      [pos updateEmvAPP:EMVOperation_update data:aidArr  block:^(BOOL isSuccess, NSString *stateStr) {
-       if (isSuccess) {
-        self.textViewLog.text = stateStr;
-        self.textViewLog.backgroundColor = [UIColor greenColor];
-        [self.updateEMVapp2 setEnabled:YES];
-         }else{
-        self.textViewLog.text = @"update emv app fail";
-        }
-      }];
-}
--(NSString* )getEMVStr:(NSString *)emvStr{
-        NSInteger emvLen = 0;
-       if (emvStr != NULL &&![emvStr  isEqual: @""]) {
-       if ([emvStr length]%2 != 0) {
-       emvStr = [@"0" stringByAppendingString:emvStr];
-       }
-       emvLen = [emvStr length]/2;
-       }else{
-       NSLog(@"init emv app config str could not be empty");
-       return nil;
-       }
-       NSData *emvLenData = [Util IntToHex:emvLen];
-       NSString *totalStr = [[[Util byteArray2Hex:emvLenData] substringFromIndex:2] stringByAppendingString:emvStr];
-       return totalStr;
-}
-~~~
+Digital Envelope
+function
+```objc
+[pos udpateWorkKey:@"680100003C82239FAC153C0A166BEEBE18B5C2749003BF114EE166D657F440F49BAE161E5077B946C04FB9244270631B3030F671566C84B51AE5FA66257D60184FAE731019ABA9599255828D82BDBEB1DCDDB404F81E10B87FB3A112ACE61645AB5C83EF1D1B82EEC8C7AAA251A86F6D2C7A96EDDB686AF8FB0A66A2AD5C931829A2A2B510CED8DE5D44DCD3DE90845B7BD4AC8D174FA704B7C27DBE61C4E0D8456C1A08C191B3AEFC00CA101874D8424A9F2E11A91F1867C1E1BF3CE6244DE7D623EE60720525F2554306423F4B14C08CA9B0BD9A9E92E1E329FE311A9DBA5E8BBD107A2E3034DA34825D337C545FBA179FB9C97831CB03376F3507CEA822722BC04FCC275AE2687D4833C994BAF7CC575E380F2F2B62C88A8AD4E6C558EC8D32F6A2D38B9A3411CF6E93A1F641EDB3FD0DC85DFF15BE862A0053D9D8637FDDE837CFED84341BC65397C8DBC87E16F3A3D871BB4E6271DCCF32E7F07DA7387FB2943EDBB258DE31F015F03AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"];
+```
+
+
