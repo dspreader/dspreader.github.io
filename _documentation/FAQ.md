@@ -1,11 +1,11 @@
 ---
-title: Q&A
+title: FAQ
 position: 3
 ---
 
-Q&A
 
-### Overview on DUKPT
+### FAQ 
+
 
 ```
 Q:In which function we prompt the user to swipe or insert card ?
