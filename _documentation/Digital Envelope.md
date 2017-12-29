@@ -25,24 +25,4 @@ You can store your BDKs in an industrial used HSM (Hardware Secure Module). Then
 3.Finally, acquirer will receive and decrypt card and transaction data, then send card data to issuer bank for confirm.
 
 
-```java
-@Override
-if (errorState == Error.CMD_NOT_AVAILABLE) {
-} else if (errorState == Error.TIMEOUT) {
-} else if (errorState == Error.DEVICE_RESET) {
-} else if (errorState == Error.UNKNOWN) {
-} else if (errorState == Error.DEVICE_BUSY) {
-} else if (errorState == Error.INPUT_OUT_OF_RANGE) {
-} else if (errorState == Error.INPUT_INVALID_FORMAT) {
-} else if (errorState == Error.INPUT_ZERO_VALUES) {
-} else if (errorState == Error.INPUT_INVALID) {
-} else if (errorState == Error.CASHBACK_NOT_SUPPORTED) {
-} else if (errorState == Error.CRC_ERROR) {
-} else if (errorState == Error.COMM_ERROR) {
-} else if (errorState == Error.MAC_ERROR) {
-} else if (errorState == Error.CMD_TIMEOUT) {
-}
-}
-```
-
 
