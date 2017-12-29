@@ -17,6 +17,9 @@ collections:
   transactionsapi:
     title: TransactionsAPIs
     position: 3
+  keyinjectionapi:
+    title: keyinjectionAPIs
+    position: 4
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag
