@@ -12,10 +12,6 @@ right_code: |
   {: title="Response" }
 
   ~~~ json
-  {
-    "error": true,
-    "message": "Book doesn't exist"
-  }
   ~~~
   {: title="Error" }
 ---

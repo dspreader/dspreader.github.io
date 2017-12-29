@@ -17,10 +17,6 @@ right_code: |
   {: title="Response" }
 
   ~~~ json
-  {
-    "error": true,
-    "message": "Invalid offset"
-  }
   ~~~
   {: title="Error" }
 ---

@@ -21,10 +21,6 @@ right_code: |
   {: title="Response" }
 
   ~~~ json
-  {
-    "error": true,
-    "message": "Invalid score"
-  }
   ~~~
   {: title="Error" }
 ---

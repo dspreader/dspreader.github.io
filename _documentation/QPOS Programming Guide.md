@@ -1,11 +1,8 @@
 ---
-title: QPOS
+title: QPOS Programming Guide
 position: 1
 ---
-*QPOS Programming Guide*
 
-
-[TOC]
 
 # Change List
 
