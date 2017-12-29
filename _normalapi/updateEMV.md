@@ -19,7 +19,6 @@ right_code: |
 function:
 -(void)updateEmvAPP:(NSInteger )operationType data:(NSArray*)data  block:(void (^)(BOOL isSuccess, NSString *stateStr))updateEMVAPPBlock;
 ```
-sample code
 ```objc
 -(void)updateEMV{
       NSMutableDictionary * emvCapkDict = [pos getEMVAPPDict];
