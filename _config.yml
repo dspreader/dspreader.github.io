@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: Aviator
+title: Dspread
 description: Jekyll template for API documentation.
 url: https://example.com
 google_analytics_key:
@@ -34,7 +34,7 @@ defaults:
       path: ""
     values:
       layout: default
-      coments: true
+      comments: true
 
 types:
   - get
