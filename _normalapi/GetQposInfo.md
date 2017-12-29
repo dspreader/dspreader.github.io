@@ -2,7 +2,7 @@
 title: getQposInfo
 position: 1.1
 type: void
-description: 
+description: get device info.
 right_code: |
   ~~~ json
   {

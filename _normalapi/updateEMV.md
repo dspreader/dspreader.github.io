@@ -15,7 +15,6 @@ right_code: |
   ~~~
   {: title="Error" }
 ---
-update EMV configure
 ```
 function:
 -(void)updateEmvAPP:(NSInteger )operationType data:(NSArray*)data  block:(void (^)(BOOL isSuccess, NSString *stateStr))updateEMVAPPBlock;
