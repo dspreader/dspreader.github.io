@@ -1,6 +1,6 @@
 ---
 title: FAQ
-position: 4
+position: 3
 ---
 
 
