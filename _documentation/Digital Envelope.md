@@ -21,6 +21,11 @@ You can store your BDKs in an industrial used HSM (Hardware Secure Module). Then
 
 Bellow will illustrate expected key files and format for production by factory 
 
+Production – key exchange Stage
+
+Before massive production, Customer will be required to send bellow keys to DSPREAD for device initial keys. 
+Let’s say production 1000 device on 2017/02/27. so POSID: xxxxxxxxx17022700001~1000
+a)Customers send customer public key (PEM format) and IPEK key files to vendor
 
 ```
 
