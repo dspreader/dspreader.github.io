@@ -6,10 +6,10 @@ description: Key management - MKSK
 right_code: |
   ~~~ json
   {
-    set master key result :"set masterkey success"
+    "set master key result" :"set masterkey success"
   }
   {
-    update workkey result :UpdateInformationResult_UPDATE_SUCCESS
+    "update workkey result" :UpdateInformationResult_UPDATE_SUCCESS
   }
   ~~~
   {: title="Response" }

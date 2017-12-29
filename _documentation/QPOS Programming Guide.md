@@ -8,7 +8,6 @@ right_code: |
 
 ---
 
-# Change List
 
 Version | Author        | Date       | Description
 --------|---------------|------------|----------------
