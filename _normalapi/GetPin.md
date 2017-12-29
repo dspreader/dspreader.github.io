@@ -19,11 +19,11 @@ right_code: |
   {: title="Error" }
 ---
 
-```
+```oc
 function:
 - (void)getPin:(NSInteger)encryptType keyIndex:(NSInteger)keyIndex maxLen:(NSInteger)maxLen typeFace:(NSString *)typeFace cardNo:(NSString *)cardNo data:(NSString *)data delay:(NSInteger)timeout withResultBlock:(void (^)(BOOL isSuccess, NSDictionary * result))getPinBlock;
 ```
-```
+```oc
 sample code:
 
      "NSString *a = [Util byteArray2Hex:[Util stringFormatTAscii:@"622526XXXXXX5453"]];
@@ -31,7 +31,7 @@ sample code:
        NSLog(@"result: %@",result);
        }];"
 ```
-```
+```oc
 callback function : 
 
 -(void) onReturnGetPinResult:(NSDictionary*)decodeData;
