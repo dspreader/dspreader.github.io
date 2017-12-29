@@ -22,6 +22,10 @@ Set Master Key
 
 function:
 ```objc
+-(void) setMasterKey:(NSString *)key  checkValue:(NSString *)chkValue keyIndex:(NSInteger) mKeyIndex;
+```
+sample code:
+```objc
 NSString *pik = @"89EEF94D28AA2DC189EEF94D28AA2DC1";//111111111111111111111111
 NSString *pikCheck = @"82E13665B4624DF5";
 
