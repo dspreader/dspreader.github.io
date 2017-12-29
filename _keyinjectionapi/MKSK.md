@@ -1,5 +1,5 @@
 ---
-title: getQposInfo
+title: MKSK
 position: 1.1
 type: void
 description: Get Device Info.

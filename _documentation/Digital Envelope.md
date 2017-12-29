@@ -5,12 +5,7 @@ right_code: |
   ~~~ javascript
   https://gitlab.com/dspread
   ~~~
-  {: title="jQuery" }
-
-  ~~~ bash
  
-  ~~~
-  {: title="Curl" }
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-title: UpdateEMV
+title: DUKPT
 position: 1.5
 type: void
 description: update a certain emv configure of your device
