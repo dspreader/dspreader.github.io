@@ -15,14 +15,13 @@ right_code: |
   ~~~
   {: title="Error" }
 ---
-~~~ javascript
+update EMV configure
+```
 function:
 -(void)updateEmvAPP:(NSInteger )operationType data:(NSArray*)data  block:(void (^)(BOOL isSuccess, NSString *stateStr))updateEMVAPPBlock;
-~~~~
-~~~ javascript 
+```
+```
 sample code: 
-~~~
-~~~ javascript 
 -(void)updateEMV{
       NSMutableDictionary * emvCapkDict = [pos getEMVAPPDict];
       NSString * c =[[emvCapkDict valueForKey:@"Terminal_Capabilities"] stringByAppendingString:[self getEMVStr:@"60B8C8"]];
@@ -37,6 +36,8 @@ sample code:
         }
       }];
 }
+```
+```
 -(NSString* )getEMVStr:(NSString *)emvStr{
         NSInteger emvLen = 0;
        if (emvStr != NULL &&![emvStr  isEqual: @""]) {
@@ -52,4 +53,4 @@ sample code:
        NSString *totalStr = [[[Util byteArray2Hex:emvLenData] substringFromIndex:2] stringByAppendingString:emvStr];
        return totalStr;
 }
-~~~
+```

@@ -20,11 +20,11 @@ right_code: |
   ~~~
   {: title="Error" }
 ---
-~~~ javascript
+```
 function : [pos getQPosId];
-~~~
-~~~ javascript
+```
+```
 callback function :
 -(void) onQposIdResult: (NSDictionary*)posId;
-~~~
+```
 

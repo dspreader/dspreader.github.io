@@ -18,23 +18,21 @@ right_code: |
   ~~~
   {: title="Error" }
 ---
-~~~ javascript
-Get Pin
-~~~
-~~~ javascript
+
+```
 function:
 - (void)getPin:(NSInteger)encryptType keyIndex:(NSInteger)keyIndex maxLen:(NSInteger)maxLen typeFace:(NSString *)typeFace cardNo:(NSString *)cardNo data:(NSString *)data delay:(NSInteger)timeout withResultBlock:(void (^)(BOOL isSuccess, NSDictionary * result))getPinBlock;
-~~~
-~~~ javascript
+```
+```
 sample code:
 
      "NSString *a = [Util byteArray2Hex:[Util stringFormatTAscii:@"622526XXXXXX5453"]];
        [pos getPin:1 keyIndex:1 maxLen:6 typeFace:@"Pls Input Pin" cardNo:a data:@"" delay:30 withResultBlock:^(BOOL isSuccess, NSDictionary *result) {
        NSLog(@"result: %@",result);
        }];"
-~~~
-~~~ javascript
+```
+```
 callback function : 
 
 -(void) onReturnGetPinResult:(NSDictionary*)decodeData;
-~~~
+```

@@ -25,9 +25,6 @@ right_code: |
   {: title="Error" }
 ---
 
-###  get qpos info
-
-Get Device Info.
 ```oc
 function :[pos getQposInfo];
 ```
