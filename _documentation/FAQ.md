@@ -9,6 +9,7 @@ position: 3
 There are some frequently questions in integration.
 
 
+```
 Q:In which function we prompt the user to swipe or insert card ?
 A:onRequestWaitingUser()
 
@@ -29,5 +30,6 @@ If the current transaction is permitted , we should send:
 mPos.sendOnlineProcessResult("8A023030"+"55 file data");
 otherwise,we should send:
 mPos.sendOnlineProcessResult("8A023035"+"55 file data");
+```
 
 
