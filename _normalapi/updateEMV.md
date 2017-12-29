@@ -13,7 +13,6 @@ right_code: |
 
   ~~~ json
   ~~~
-  {: title="Error" }
 ---
 function:
 ```objc
@@ -35,9 +34,6 @@ sample code
         }
       }];
 }
-```
-callback function :
-```objc
 -(NSString* )getEMVStr:(NSString *)emvStr{
         NSInteger emvLen = 0;
        if (emvStr != NULL &&![emvStr  isEqual: @""]) {

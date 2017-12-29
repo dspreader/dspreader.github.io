@@ -16,7 +16,6 @@ right_code: |
 
   ~~~ json
   ~~~
-  {: title="Error" }
 ---
 function:
 ```objc
