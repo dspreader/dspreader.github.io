@@ -6,34 +6,29 @@ description: Get Device Info.
 right_code: |
   ~~~ json
   {
-      "Bootloader Version": 3.1,
-      "Firmware Version": 3.58.3.46,
-      "Hardware Version": A27,
-      "Battery Percentage": 0%,
-      "Charge": false,
-      "USB": false,
-      "Track 1 Supported": true,
-      "Track 2 Supported": true,
-      "Track 3 Supported": false,
-      "updateWorkKeyFlag": false
+    result :"set masterkey success";
   }
   ~~~
   {: title="Response" }
 
   ~~~ json
-  ~~~
-  {: title="Error" }
 ---
 
-get qpos info
+set Master Key
 
-~~~ javascript
-function :[pos getQposInfo];
-~~~
-~~~ javascript
+function:
+```objc
+NSString *pik = @"89EEF94D28AA2DC189EEF94D28AA2DC1";//111111111111111111111111
+NSString *pikCheck = @"82E13665B4624DF5";
+
+pik = @"F679786E2411E3DEF679786E2411E3DE";//33333333333333333333333333333
+pikCheck = @"ADC67D8473BF2F06";
+[pos setMasterKey:pik checkValue:pikCheck keyIndex:keyIndex];
+```
 callback function :
--(void) onQposInfoResult: (NSDictionary*)posInfoData;
-~~~
+```objc
+-(void) onReturnSetMasterKeyResult: (BOOL)isSuccess;
+```
 
 
 
