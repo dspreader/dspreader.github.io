@@ -4,9 +4,9 @@ position: 3
 ---
 
 
-### FAQ 
+### 
 
-There are some frequently questions in integration.
+There are some frequently answers and questions in integration.
 
 
 ```
