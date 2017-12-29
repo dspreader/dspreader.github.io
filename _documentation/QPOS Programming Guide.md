@@ -1,7 +1,6 @@
 ---
 title: QPOS Programming Guide
 position: 1
-position: 2
 right_code: |
    ~~~ javascript
    https://gitlab.com/dspread
