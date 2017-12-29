@@ -2,7 +2,7 @@
 title: UpdateEMV
 position: 1.5
 type: void
-description: update a certain emv configure of your device
+description: Update a certain emv configure of your device
 right_code: |
   ~~~ json
   {

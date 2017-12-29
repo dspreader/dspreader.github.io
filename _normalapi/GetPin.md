@@ -2,7 +2,7 @@
 title: GetPin
 position: 1.3
 type: void
-description: input pin and generate pinblock when necessary 
+description: Input pin and generate pinblock when necessary 
 right_code: |
   ~~~ json
   {

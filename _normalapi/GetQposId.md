@@ -2,7 +2,7 @@
 title: GetQposId
 position: 1.0
 type: void
-description: Get Device Serial Number.
+description: Get device serial number.
 right_code: |
   ~~~ json
    {

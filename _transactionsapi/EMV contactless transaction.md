@@ -28,17 +28,17 @@ right_code: |
   {: title="Error" }
 ---
 
-function : [pos doTrade:30];[pos doCheckCard];
+function :
+```objc
+[pos doTrade:30];[pos doCheckCard];
+```
+
+callback function :
+```objc
+-(void) onDoTradeResult: (DoTradeResult)result DecodeData:(NSDictionary*)decodeData;
+```
 
 ~~~ javascript
 tips: the difference between api doTrade and doCheckCard:
 calling doCheck card , you don't have to input pin when doing swipe transaction.
-~~~
-~~~ javascript
-Contactless EMV Transaction
-~~~
-~~~ javascript
-callback function :
-
--(void) onDoTradeResult: (DoTradeResult)result DecodeData:(NSDictionary*)decodeData;
 ~~~
