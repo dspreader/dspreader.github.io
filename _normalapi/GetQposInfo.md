@@ -25,6 +25,10 @@ right_code: |
 ---
 function :
 ```objc
+-(void) getQPosInfo;
+```
+sample function:
+```objc
 [pos getQposInfo];
 ```
 callback function :

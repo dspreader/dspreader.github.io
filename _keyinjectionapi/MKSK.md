@@ -1,5 +1,5 @@
 ---
-title: MKSK-SetMasterKey
+title: MKSK
 position: 1.1
 type: void
 description: Key management - MKSK

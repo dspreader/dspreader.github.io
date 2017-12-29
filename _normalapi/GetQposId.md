@@ -22,6 +22,10 @@ right_code: |
 
 function :
 ```objc
+-(void) getQPosId;
+```
+sample code :
+```objc
  [pos getQPosId];
 ```
 callback function :
