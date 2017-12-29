@@ -15,10 +15,11 @@ right_code: |
   ~~~
   {: title="Error" }
 ---
-```objc
 function:
+```objc
 -(void)updateEmvAPP:(NSInteger )operationType data:(NSArray*)data  block:(void (^)(BOOL isSuccess, NSString *stateStr))updateEMVAPPBlock;
 ```
+sample code
 ```objc
 -(void)updateEMV{
       NSMutableDictionary * emvCapkDict = [pos getEMVAPPDict];
@@ -35,6 +36,7 @@ function:
       }];
 }
 ```
+callback function :
 ```objc
 -(NSString* )getEMVStr:(NSString *)emvStr{
         NSInteger emvLen = 0;

@@ -20,11 +20,13 @@ right_code: |
   ~~~
   {: title="Error" }
 ---
+
+function :
 ```objc
-function : [pos getQPosId];
+ [pos getQPosId];
 ```
-```objc
 callback function :
+```objc
 -(void) onQposIdResult: (NSDictionary*)posId;
 ```
 

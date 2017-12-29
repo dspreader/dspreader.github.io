@@ -18,21 +18,18 @@ right_code: |
   ~~~
   {: title="Error" }
 ---
-
-```objc
 function:
+```objc
 - (void)getPin:(NSInteger)encryptType keyIndex:(NSInteger)keyIndex maxLen:(NSInteger)maxLen typeFace:(NSString *)typeFace cardNo:(NSString *)cardNo data:(NSString *)data delay:(NSInteger)timeout withResultBlock:(void (^)(BOOL isSuccess, NSDictionary * result))getPinBlock;
 ```
-```objc
 sample code:
-
-     "NSString *a = [Util byteArray2Hex:[Util stringFormatTAscii:@"622526XXXXXX5453"]];
+```objc
+      "NSString *a = [Util byteArray2Hex:[Util stringFormatTAscii:@"622526XXXXXX5453"]];
        [pos getPin:1 keyIndex:1 maxLen:6 typeFace:@"Pls Input Pin" cardNo:a data:@"" delay:30 withResultBlock:^(BOOL isSuccess, NSDictionary *result) {
        NSLog(@"result: %@",result);
        }];"
 ```
-```objc
 callback function : 
-
+```objc
 -(void) onReturnGetPinResult:(NSDictionary*)decodeData;
 ```
