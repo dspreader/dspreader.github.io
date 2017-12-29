@@ -16,21 +16,18 @@ right_code: |
 
   ~~~ json
   ~~~
-  {: title="Error" }
 ---
 
-function : [pos doTrade:30];[pos doCheckCard];
-
+function : 
+```objc
+[pos doTrade:30];[pos doCheckCard];
+```
+callback function :
+```objc
+-(void) onRequestTransactionResult: (TransactionResult)transactionResult;
+```
 ~~~ javascript
 tips: the difference between api doTrade and doCheckCard:
 calling doCheck card , you don't have to input pin when doing swipe transaction.
-~~~
-~~~ javascript
-ICC (EMV) Transaction
-~~~
-~~~ javascript
-callback function :
-
--(void) onRequestTransactionResult: (TransactionResult)transactionResult;
 ~~~
 
