@@ -24,12 +24,12 @@ right_code: |
   ~~~
   {: title="Error" }
 ---
-
+function :
 ```objc
-function :[pos getQposInfo];
+[pos getQposInfo];
 ```
-```objc
 callback function :
+```objc
 -(void) onQposInfoResult: (NSDictionary*)posInfoData;
 ```
 
