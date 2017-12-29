@@ -15,12 +15,12 @@ right_code: |
   ~~~
   {: title="Error" }
 ---
-```oc
+```objc
 function:
 -(void)updateEmvAPP:(NSInteger )operationType data:(NSArray*)data  block:(void (^)(BOOL isSuccess, NSString *stateStr))updateEMVAPPBlock;
 ```
 sample code
-```object-c
+```objc
 -(void)updateEMV{
       NSMutableDictionary * emvCapkDict = [pos getEMVAPPDict];
       NSString * c =[[emvCapkDict valueForKey:@"Terminal_Capabilities"] stringByAppendingString:[self getEMVStr:@"60B8C8"]];
@@ -36,7 +36,7 @@ sample code
       }];
 }
 ```
-```java
+```objc
 -(NSString* )getEMVStr:(NSString *)emvStr{
         NSInteger emvLen = 0;
        if (emvStr != NULL &&![emvStr  isEqual: @""]) {

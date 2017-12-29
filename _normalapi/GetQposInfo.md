@@ -25,10 +25,10 @@ right_code: |
   {: title="Error" }
 ---
 
-```oc
+```objc
 function :[pos getQposInfo];
 ```
-```oc
+```objc
 callback function :
 -(void) onQposInfoResult: (NSDictionary*)posInfoData;
 ```
