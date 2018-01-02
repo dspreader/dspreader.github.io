@@ -20,6 +20,11 @@ collections:
   keyinjectionapi:
     title: keyinjectionAPIs
     position: 4
+  contactus:
+     title:contactus 
+     position: 5
+    
+
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag
