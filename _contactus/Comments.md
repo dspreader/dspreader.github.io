@@ -14,11 +14,11 @@ right_code: |
 
 ---
 
-contact us:
+contact us
 ```
 pls send emails to 3195168180@qq.com
 ```
-comments:
+comments
 ```
 pls write your comments  below
 ```
