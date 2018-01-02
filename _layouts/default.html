@@ -42,6 +42,7 @@
 		</header>
 		<div class="main">
 			{{ content }}
+			{% include disqus.html %}
 		</div>
 		<script>
 			document.getElementById("open-nav").addEventListener("click", function () {
