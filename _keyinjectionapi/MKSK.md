@@ -26,10 +26,10 @@ function:
 ```
 sample code:
 ```objc
-NSString *pik = @"89EEF94D28AA2DC189EEF94D28AA2DC1";//111111111111111111111111
-NSString *pikCheck = @"82E13665B4624DF5";
+NSString *masterKey = @"89EEF94D28AA2DC189EEF94D28AA2DC1";//111111111111111111111111
+NSString *masCheck = @"82E13665B4624DF5";
 
-[pos setMasterKey:pik checkValue:pikCheck keyIndex:keyIndex];
+[pos setMasterKey:masterKey checkValue:pikCheck keyIndex:masCheck];
 ```
 callback function :
 ```objc
