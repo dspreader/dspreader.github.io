@@ -1,6 +1,6 @@
 ---
 title: DUKPT
-position: 2
+position: 1.2
 type: void
 description: Key management - DUKPT
 right_code: |
