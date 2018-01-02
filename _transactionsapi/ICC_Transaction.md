@@ -1,6 +1,6 @@
 ---
 title: ICC(EMV)CardTransaction
-position: 1.3
+position: 1
 type: void
 description: Result of EMV transaction
 function name:-(void) onRequestTransactionResult: (TransactionResult)transactionResult

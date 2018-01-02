@@ -1,6 +1,6 @@
 ---
 title: MagneticStripCardTransaction
-position: 1.3
+position: 3
 type: get
 description: Result of magnetic strip card transaction
 right_code: |

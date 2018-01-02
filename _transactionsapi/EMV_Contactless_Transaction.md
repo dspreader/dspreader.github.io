@@ -1,6 +1,6 @@
 ---
 title: EMVContactlessCardTransaction 
-position: 1.3
+position: 2
 type: void
 description: Result of contactless EMV transaction
 right_code: |
