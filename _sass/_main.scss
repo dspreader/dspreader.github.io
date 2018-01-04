@@ -456,7 +456,10 @@ header {
 		@include flex-direction(row);
 		@include align-items(center);
 		border-bottom: 1px solid rgba(0, 0, 0, 0.075);
-
+                background-image{
+			height: 60px;
+			width: 210px;
+		}
 		img {
 			height: 26px;
 			margin: 0 18px;
