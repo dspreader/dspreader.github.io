@@ -440,7 +440,8 @@ header {
 	z-index: 1;
 	background-color: $nav-background-color;
 
-	h1 {
+	h1 {    
+		background-image: url(/images/fork.png);
 		height: $nav-header-height;
 		box-sizing: border-box;
 		background-color: $brand-colour;
