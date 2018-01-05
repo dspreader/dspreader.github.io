@@ -9,7 +9,7 @@ body, .main {
 }
 
 html {
-	font-size: 50%;
+	font-size: 62.5%;
 	color: #474a54;
 	background: #232323;
 	height: 100vh;
@@ -21,7 +21,7 @@ html {
 	}
 
 	.sidebar h6 {
-		font-size: 1.4em;
+		font-size: 1.2em;
 	}
 
 	.sidebar a {
@@ -34,7 +34,7 @@ html {
 }
 
 body {
-	font-size: 1.8em;
+	font-size: 1.4em;
 	line-height: 1.6;
 	font-weight: 400;
 	font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
@@ -63,7 +63,7 @@ table {
 th, td {
 	border: 1px solid #ccc;
 	padding: 10px;
-	font-size: .9em;
+	font-size: .5em;
 	text-align: left;
 }
 
@@ -81,14 +81,14 @@ h2 { font-size: 3.0rem; line-height: 1.25; letter-spacing: -.1rem; }
 h3 { font-size: 2.6rem; line-height: 1.3;	letter-spacing: -.1rem; }
 
 h4 {
-	font-size: 2.4rem;
+	font-size: 2.0rem;
 	line-height: 1.35;
 	letter-spacing: -.08rem;
 	margin: 0 0 5px 0;
 }
 
 h5 {
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 	line-height: 1.5;
 	letter-spacing: -.05rem;
 }
@@ -156,7 +156,7 @@ dl dd:after {
 
 .sidebar h6 {
 	line-height: 1em;
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 	letter-spacing: 1px;
 	color: #888;
 	font-weight: bold;
@@ -185,7 +185,7 @@ dl dd:after {
 	a {
 		color: #777;
 		text-decoration: none;
-		font-size: .90em;
+		font-size: .50em;
 		display: block;
 		width: 100%;
 		text-overflow: ellipsis;
@@ -207,7 +207,7 @@ dl dd:after {
 
 h3 .endpoint {
 	padding: 4px 6px;
-	font-size: 19px;
+	font-size: 15px;
 }
 
 .endpoint.put {
@@ -242,7 +242,7 @@ h3 .endpoint {
 	margin: 0 0 0 210px;
 	border-left: 1px solid #eee;
 	h6 {
-		font-size: 1.01em;
+		font-size: .61em;
 		padding: 0 0 6px 0;
 		margin: 0;
 	}
@@ -358,7 +358,7 @@ hr {
 		padding: 0;
 		margin: 0 0 5px 0;
 		list-style: none;
-		font-size: .9em;
+		font-size: .5em;
 
 		li {
 			display: inline-block;
@@ -447,7 +447,7 @@ header {
 		background-color: $brand-colour;
 		color: #fff;
 		margin: 0;
-		font-size: 1.7rem;
+		font-size: 1.3rem;
 		line-height: 0.8;
 		letter-spacing: 0;
 		font-weight: 600;
@@ -511,7 +511,7 @@ header {
 	border: 0;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.075);
 
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 	font-weight: 600;
 	line-height: 1.8;
 
@@ -549,6 +549,6 @@ header {
 
 .copyright {
 	text-align: center;
-	font-size: .6em;
+	font-size: .3em;
 	margin: 30px 0 0 0;
 }
