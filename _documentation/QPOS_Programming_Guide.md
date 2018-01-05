@@ -16,7 +16,7 @@ Version | Author        | Date       | Description
 1.1     | Ausitn Wang   | 2017-03-01 | Merge QPOS standard and EMV Card reader together
 1.2     | Austin Wang   | 2017-10-20 | Added UART interface support for GES device
 
-# Introduction
+### Introduction
 
 QPOS is a serial of mobile payment devices. It can communicate with the mobile device through audio jack, UART or USB cable. 
 
@@ -24,7 +24,7 @@ QPOS standard, QPOS mini, QPOS Plus, EMV06, EMV08, GEA and GES are all QPOS prod
 
 This document aims to help readers for using the Android SDK of QPOS.
 
-# Programming Model
+### Programming Model
 
 All methods the SDK provided can be devided into three types:
 1. Init methods；
@@ -35,9 +35,9 @@ The application use the init method to init the EMV card reader hardware and get
 
 To avoid the application block and improve the speed of  data interaction between the smart terminal and QPOS, the SDK framework is designed to work under asynchronous mode.
 
-# Programming Interface
+### Programming Interface
 
-## Initialization
+#### Initialization
 
 The Class named ‘QPOSService’ is the core of SDK library. Before the APP create this core instance with the parameter of “CommunicationMode mode”, the APP must register all the sub-functions in ‘QPOSServiceListener’. Below code snipplet shows how to init the SDK.
 
@@ -92,7 +92,7 @@ posType = POS_TYPE.BLUETOOTH;
 }
 ```
 
-## Get Device Information
+#### Get Device Information
 
 The app can get the EMV cardreader information by issuing:
 
@@ -129,7 +129,7 @@ String hardwareVersion = posInfoData.get("hardwareVersion") == null ? ""
 App can knows the hardware , firmware version and hardware configuration based on the returned information.
 
 
-## Get Device ID
+#### Get Device ID
 
 The device ID is use to indentifying one paticular EMV card reader. The app use below method to get the device ID:
 
@@ -149,7 +149,7 @@ String posId = posIdTable.get("posId") == null ? "" : posIdTable
 ```
 
 
-## Start Transaction
+#### Start Transaction
 
 The app can start a magnatic swipe card transaction, or an EMV chip card transaction, by below method:
 ```java
@@ -157,7 +157,7 @@ pos.doTrade(60);
 ```
 The only paramter is the time out value in second. If the user is using magnatic swipe card, after timeout seconds, the transaction will be timed out.
 
-## Set Transaction Amount
+#### Set Transaction Amount
 
 The transaction amount can be set by:
 
@@ -198,7 +198,7 @@ PAYMENT
 ```
 Transaction type is used mainly by the EMV Chip card transaction, for magnetic card, app can always use GOODS.
 
-## Magstripe Card Transaction
+#### Magstripe Card Transaction
 
 Magstripe card transaction is pretty simple. 
 After the app start a transaction, if the user use a magnatic card, below callback will be called feeding the app magnatic card related information. The app then use the information returned for further processing.
@@ -268,7 +268,7 @@ trackksn	  | KSN of the track data
 
 The track data returned in the hashtable is encrytped. It can be encrypted by Dukpt Data Key Variant 3DES ECB mode, or by Dukpt Data Key 3DES CBC mode. Per ANSI X9.24 2009 version request, The later (Data Key with 3DES CBC mode) is usually a recommanded choice.
 
-### Decoding Track Data Encrypted with Data Key Variant
+###### Decoding Track Data Encrypted with Data Key Variant
 
 Below is an example of the data captured during a live magnatic transaction, the track data is encrypted using data key variant, in 3DES ECB mode:
 
@@ -354,7 +354,7 @@ Using data key variant to decrypt track 2, will get:
 
 Each character in Track 2 & Track 3 is 4 bits in length. 2 characters are packed into 1 byte and padded with zero before encryption
 
-### Decoding Track Data Encrypted with Data Key
+###### Decoding Track Data Encrypted with Data Key
 
 Below is another example, the track data is encrypted using data key whith 3DES CBC mode (per ANSI X9.24 2009 version request)
 
@@ -414,7 +414,7 @@ return hexlify(res)
 ```
 The decoded track 1 and track 2 data are the same as the track data we got in previous section.
 
-## Decoding PIN 
+#### Decoding PIN
 
 The QPOS will also send the encryted PIN to the mobile application:
 ```
@@ -471,7 +471,7 @@ return hexlify(res)
 if __name__ == "__main__":
 KSN = "00000332100300E000E6"
 DATA = "377D28B8C7EF080A"
-#DATA="153CEE49576C0B709515946D991CB48368FEA0375837ECA6"
+###DATA="153CEE49576C0B709515946D991CB48368FEA0375837ECA6"
 print decrypt_pinblock(KSN, DATA)
 
 ```
@@ -482,13 +482,13 @@ The real PIN value can be caculated using formated pin data and PAN as inputs, a
 1) PAN: 6221061055111111
 2) 12 right most PAN digits without checksum: 106105511111
 3) Add 0000 to the left: 0000106105511111
-4) XOR (#3) and Formated PIN Data 
+4) XOR (###3) and Formated PIN Data
 
 XOR (0000106105511111, 0411019efaaeeeee) = 041111FFFFFFFFFF
 In our example, the plain PIN is 4 bytes in length with data "1111"
 
 
-## Chip Card Transaction
+#### Chip Card Transaction
 
 EMV Chip card transaction is much more complicate than magnatic swipe card transaction. The EMV kernel inside the device may need a lot of information to process the transaction, including:
 
@@ -497,7 +497,7 @@ EMV Chip card transaction is much more complicate than magnatic swipe card trans
 3. Preferred EMV application from card holder
 4. The process result from the bank (card issuer) for the transaction
 
-### Start Chip Card Transaction
+###### Start Chip Card Transaction
 
 The app start the EMV transaction by calling
 ```java
@@ -524,7 +524,7 @@ statusEditText.setText(getString(R.string.bad_swipe));
 }
 ```
 
-### Input PIN 
+###### Input PIN
 
 The PIN information can be sent to the EMV kernel by:
 ```java
@@ -547,7 +547,7 @@ if the user want to cancel the transaction, the app should call
 pos.cancelPin();
 ```
 
-### Set Time
+###### Set Time
 
 The current time information can be sent to the EMV kernel by:
 
@@ -560,7 +560,7 @@ pos.sendTime(terminalTime);
 }
 ```
 
-### Select EMV Application
+###### Select EMV Application
 
 If there is multiple EMV applications inside one Chip card, the SDK will ask the user to choose one application from a list:
 
@@ -578,7 +578,7 @@ The chosen application is sending to the EMV kernel by
 pos.selectEmvApp(position)
 ```
 
-### Online Request
+###### Online Request
 
 If the EMV kernel found the transaction need to go online, below call back will be called.
 
@@ -676,7 +676,7 @@ http://www.emvlab.org/tlvutils/?data=708201479f02060000000000015a096230615710101
 
 All the online message in embedded inside tag 0x70, the ending 00 are paddings for 3DES encryption.
 
-### Get Transaction Result 
+###### Get Transaction Result
 
 The application will be notified by the SDK regarding the transaction result by:
 
@@ -701,7 +701,7 @@ if (transactionResult == TransactionResult.APPROVED) {
 }
 ```
 
-### Batch Data Handling
+###### Batch Data Handling
 
 When the transaction is finished. The batch data will be returned to the application by below callback.
 
@@ -713,7 +713,7 @@ public void onRequestBatchData(String tlv) {
 Note, if there is issuer's script result inside the tlv, the mobile app need to feedback it to the bank.
 Decoding the tlv inside onRequestBatchData is similar to decoding onRequestOnlineProcess. 
 
-### Reversal Handling
+###### Reversal Handling
 
 If the EMV chip card refuse the transaction, but the transaction was approved by the issuer. A reversal procedure should be initiated by the mobile app. The requred data for doing reversal can be got by below call back:
 
@@ -724,7 +724,7 @@ public void onReturnReversalData(String tlv) {
 }
 ```
 
-## Error Notification
+#### Error Notification
 
 During the transaction, if there is anything abnormal happened, the onError callback will be called.
 
