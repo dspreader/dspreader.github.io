@@ -18,10 +18,10 @@ collections:
     title: TransactionsAPIs
     position: 3
   keyinjectionapi:
-    title: keyinjectionAPIs
+    title: KeyinjectionAPIs
     position: 4
   contactus:
-     title: contactus 
+     title: Contactus 
      position: 5
     
 
