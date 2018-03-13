@@ -11,6 +11,9 @@ collections:
   documentation:
     title: Documentation
     position: 1
+  bluetoothconnect:
+     title: BluetoothConnect 
+     position: 5
   normalapi:
     title: NormalAPIs
     position: 2
@@ -23,6 +26,7 @@ collections:
   contactus:
      title: Contactus 
      position: 5
+ 
     
 
 gems:
