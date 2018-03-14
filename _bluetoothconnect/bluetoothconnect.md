@@ -11,17 +11,16 @@ TheBTDeviceFinder have implemented the method of scanning the bluetooth, control
 ```objc
 -(void)scanBluetooth{
 BTDeviceFinder  *bt = [BTDeviceFinder new];
-
 NSInteger delay = 0;
-
 if(is2ModeBluetooth){
+
 [bt setBluetoothDelegate2Mode:self];
+
 if ([bt getCBCentralManagerState] == CBCentralManagerStateUnknown) {
 
 [self sleepMs:20];
 if([bt getCBCentralManagerState]!= CBCentralManagerStatePoweredOn) {
 
-NSLog(@"Bluetooth state is not power on");
 mAlertView = [[UIAlertView new]
 initWithTitle:@"pls open bluetooth"
 message:@""
@@ -29,7 +28,9 @@ message:@""
  cancelButtonTitle:@"Confirm"
  otherButtonTitles:nil,
 nil ];
+
 [mAlertView show];
+
 if(delay++==10){
 return;
 }
