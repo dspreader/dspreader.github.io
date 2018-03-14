@@ -12,6 +12,7 @@ TheBTDeviceFinder have implemented the method of scanning the bluetooth, control
 -(void)scanBluetooth{
 BTDeviceFinder  *bt = [BTDeviceFinder new];
 NSInteger delay = 0;
+
 if(is2ModeBluetooth){
 
 [bt setBluetoothDelegate2Mode:self];
@@ -19,6 +20,7 @@ if(is2ModeBluetooth){
 if ([bt getCBCentralManagerState] == CBCentralManagerStateUnknown) {
 
 [self sleepMs:20];
+
 if([bt getCBCentralManagerState]!= CBCentralManagerStatePoweredOn) {
 
 mAlertView = [[UIAlertView new]
