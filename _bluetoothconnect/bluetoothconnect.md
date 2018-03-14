@@ -1,10 +1,4 @@
 ---
-title: BluetoothConnect
-position: 2.0
-type: void
-description:Bluetooth connect steps
-
----
 
 1.scan:
 ---
