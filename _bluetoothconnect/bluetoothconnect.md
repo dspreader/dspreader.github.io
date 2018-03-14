@@ -4,7 +4,6 @@ position: 1
 ---
 
 
-
 ## 1.scan:
 
 TheBTDeviceFinder have implemented the method of scanning the bluetooth, controller need comply with the BluetoothDelegate2Mode protocol,in this function,create a instance of BTDeviceFinder,to detect the state of bluetooth,Call scanning method.
