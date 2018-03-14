@@ -8,7 +8,7 @@ position: 1
 ## 1.scan:
 
 <font face="STCAIYUN">TheBTDeviceFinder have implemented the method of scanning the bluetooth, controller need comply with the BluetoothDelegate2Mode protocol,in this function,create a instance of BTDeviceFinder,to detect the state of bluetooth,Call scanning method.</font>
-<font color=#00ffff size=100>color=#00ffff</font>
+<font color=#00ffff size=100></font>
 
 ```objc
 -(void)scanBluetooth{
