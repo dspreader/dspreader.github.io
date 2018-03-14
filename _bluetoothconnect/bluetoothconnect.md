@@ -5,10 +5,11 @@ position: 1
 
 
 
-##### 1.scan:
+### 1.scan:
+
 TheBTDeviceFinder have implemented the method of scanning the bluetooth, controller need comply with the BluetoothDelegate2Mode protocol,in this function,create a instance of BTDeviceFinder,to detect the state of bluetooth,Call scanning method.
 
-```
+```objc
 -(void)scanBluetooth{
 BTDeviceFinder  *bt = [BTDeviceFinder new];
 NSInteger delay = 0;
@@ -36,10 +37,11 @@ return;
 }
 ```
 
-##### 2. connect:
+### 2. connect:
+
 Controllers should implementate below callback function,in this function can get bluetoothName,and then connect bluetooth according to the bluetooth name.
 
-```
+```objc
 -(void)onBluetoothName2Mode:(NSString *)bluetoothName{
 dispatch_async(dispatch_get_main_queue(),  ^{
 if(isTestBluetooth){
@@ -54,10 +56,10 @@ if ([bluetoothName hasPrefix:@"QPOS0100000073"]) {
 }
 ```
 
-#####3.binding:
+###3.binding:
 In QPOSService impelement  the API of connectBluetooth,in  the function QPOSService sets the protocol,controllers should  follow the protocol of QPOSServiceListener.
 
-```
+```objc
 -(void)initQposs{
 QPOSService    *mQPOSService = [QPOSService sharedInstance];
 [mQPOSService setDelegate:self];
@@ -66,10 +68,10 @@ QPOSService    *mQPOSService = [QPOSService sharedInstance];
 }
 ```
 
-#####4.connect
+###4.connect
 Create a intance of  QPOSService, QPOSService connectbluetooth  through bluename.
 
-```
+```objc
 - (void)connectionPOS:(NSString *)bluetoothAddress{
 [self initQposs];
 QPOSService *mQPOSService =  [QPOSService new];
