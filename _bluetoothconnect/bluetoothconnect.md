@@ -37,7 +37,7 @@ return;
 }
 ```
 
-### 2. connect:
+## 2. connect:
 
 Controllers should implementate below callback function,in this function can get bluetoothName,and then connect bluetooth according to the bluetooth name.
 
@@ -56,7 +56,8 @@ if ([bluetoothName hasPrefix:@"QPOS0100000073"]) {
 }
 ```
 
-###3.binding:
+## 3.binding:
+
 In QPOSService impelement  the API of connectBluetooth,in  the function QPOSService sets the protocol,controllers should  follow the protocol of QPOSServiceListener.
 
 ```objc
@@ -68,7 +69,8 @@ QPOSService    *mQPOSService = [QPOSService sharedInstance];
 }
 ```
 
-###4.connect
+## 4.connect
+
 Create a intance of  QPOSService, QPOSService connectbluetooth  through bluename.
 
 ```objc
