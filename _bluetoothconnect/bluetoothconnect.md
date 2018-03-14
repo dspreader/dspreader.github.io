@@ -9,7 +9,7 @@ position: 1
 
 TheBTDeviceFinder have implemented the method of scanning the bluetooth, controller need comply with the BluetoothDelegate2Mode protocol,in this function,create a instance of BTDeviceFinder,to detect the state of bluetooth,Call scanning method.
 
-```objc
+````objc
 -(void)scanBluetooth{
 BTDeviceFinder  *bt = [BTDeviceFinder new];
 NSInteger delay = 0;
@@ -35,7 +35,7 @@ return;
 // Can get devices list
 [bt scanQPos2Mode:scanBluetoothTime];
 }
-```
+````
 
 ## 2. connect:
 
