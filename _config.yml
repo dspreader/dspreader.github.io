@@ -13,19 +13,19 @@ collections:
     position: 1
   bluetoothconnect:
      title: BluetoothConnect 
-     position: 5
+     position: 2
   normalapi:
     title: NormalAPIs
-    position: 2
+    position: 3
   transactionsapi:
     title: TransactionsAPIs
-    position: 3
+    position: 4
   keyinjectionapi:
     title: KeyinjectionAPIs
-    position: 4
+    position: 5
   contactus:
      title: Contactus 
-     position: 5
+     position: 6
  
     
 
