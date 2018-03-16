@@ -49,6 +49,7 @@ In QPOSService impelement  the API of connectBluetooth,in  the function QPOSServ
 
 ```objc
 -(void)initQposs{
+
 QPOSService    *mQPOSService = [QPOSService sharedInstance];
 [mQPOSService setDelegate:self];
 [mQPOSService setQueue:nil];
